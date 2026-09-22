@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Portfolio of Mahin Ahmad Emon — Full-Stack Developer and Software Engineering student building responsive web interfaces and database-driven applications.">
+  <meta name="theme-color" content="#0B1120">
+  <title>Mahin Ahmad Emon | Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Caveat:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Mahin Ahmad Emon home">
+        <span class="brand-logo">MA</span>
+        <div class="brand-text">
+          <span class="brand-name">Mahin Ahmad <strong>Emon</strong></span>
+          <span class="brand-sub">FULL-STACK DEVELOPER</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">What I Build</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-small btn-primary nav-cta" href="assets/cv/Mahin_Ahmad_Emon_CV_OnePage.pdf" download>Download
+        CV</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ═══ HERO ═══ -->
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+
+        <div class="hero-copy reveal">
+          <div class="avail-badge">
+            <span class="avail-dot"></span> Available for work
+          </div>
+          <h1>Hi, I'm<br><span class="gradient-text">Mahin Ahmad Emon</span></h1>
+          <p class="hero-role">Full-Stack Developer Building <span class="teal-text">Clean Web Experiences</span></p>
+          <p class="hero-text">Computer Science &amp; Engineering student at AIUB, focused on responsive interfaces,
+            application development, and database-backed systems.</p>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">PROJECTS BUILT</span>
+            </div>
+            <div class="stat-div"></div>
+            <div class="stat">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">YEARS CODING</span>
+            </div>
+            <div class="stat-div"></div>
+            <div class="stat">
+              <span class="stat-num">6+</span>
+              <span class="stat-label">TECHNOLOGIES</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">🚀 View My Projects →</a>
+            <a class="btn btn-outline" href="assets/cv/Mahin_Ahmad_Emon_CV_OnePage.pdf" download>⬇ Download CV</a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/MahinAhmadEmon" target="_blank" rel="noopener" aria-label="GitHub"
+              class="social-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+            <a href="mailto:mahinahmad911@gmail.com" aria-label="Email" class="social-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Developer profile illustration">
+          <span class="annotation ann-tr">Turning ideas<br>into reality ↙</span>
+          <span class="annotation ann-bl">↖ Clean Code<br>Better Solutions</span>
+          <div class="avatar-wrap">
+            <div class="avatar-ring"></div>
+            <div class="avatar-circle">
+              <img src="mahin.png" alt="Mahin Ahmad Emon">
+            </div>
+            <div class="skill-badge badge-html">HTML</div>
+            <div class="skill-badge badge-css">CSS</div>
+            <div class="skill-badge badge-js">JS</div>
+            <div class="skill-badge badge-php">PHP</div>
+            <div class="skill-badge badge-laravel">Laravel</div>
+            <div class="skill-badge badge-mysql">MySQL</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══ WHAT I BUILD ═══ -->
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <div class="section-label reveal"><span>🧩 Expertise</span></div>
+        <div class="section-heading center-heading reveal">
+          <h2>What I <span class="gradient-text">Build</span></h2>
+          <p>Turning requirements into organized, user-friendly interfaces and full application logic.</p>
+        </div>
+        <div class="services-grid">
+          <article class="glass-card reveal">
+            <div class="card-icon">🎨</div>
+            <h3>Responsive UI</h3>
+            <p>Clean, adaptive layouts built with HTML, CSS, and JavaScript that work across all devices.</p>
+          </article>
+          <article class="glass-card reveal">
+            <div class="card-icon">🌐</div>
+            <h3>Web Applications</h3>
+            <p>Full-stack web apps using Laravel/PHP, connecting modern interfaces with backend logic.</p>
+          </article>
+          <article class="glass-card reveal">
+            <div class="card-icon">🔄</div>
+            <h3>CRUD Systems</h3>
+            <p>Practical create, read, update, and delete workflows for academic and commercial applications.</p>
+          </article>
+          <article class="glass-card reveal">
+            <div class="card-icon">🗄️</div>
+            <h3>Database Integration</h3>
+            <p>Designing and connecting relational data with MySQL and Oracle for project functionality.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PROJECTS ═══ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-label reveal"><span>⭐ Featured Projects</span></div>
+        <div class="section-heading center-heading reveal">
+          <h2>Showcasing My <span class="gradient-text">Best Work</span></h2>
+          <p>Selected projects from my CSE coursework — UI design, CRUD workflows, databases, and role-based access.</p>
+        </div>
+        <div class="project-stats reveal">
+          <div class="pstat"><span class="pstat-num teal-text">3</span><span>Projects</span></div>
+          <div class="pstat"><span class="pstat-num teal-text">6+</span><span>Technologies</span></div>
+          <div class="pstat"><span class="pstat-num teal-text">3</span><span>Categories</span></div>
+        </div>
+
+        <div class="projects-list">
+
+          <article class="project-card-h reveal">
+            <div class="project-preview">
+              <div class="project-preview-inner">
+                <div class="preview-bar"><span></span><span></span><span></span><em>travel-guide.php</em></div>
+                <div class="preview-content">
+                  <div class="preview-header">Travel Guide Platform</div>
+                  <div class="preview-row">
+                    <div class="pb accent"></div>
+                    <div class="pb"></div>
+                  </div>
+                  <div class="preview-row">
+                    <div class="pb"></div>
+                    <div class="pb soft"></div>
+                    <div class="pb"></div>
+                  </div>
+                  <div class="preview-row">
+                    <div class="pb soft"></div>
+                    <div class="pb accent"></div>
+                  </div>
+                  <div class="preview-row">
+                    <div class="pb"></div>
+                    <div class="pb"></div>
+                    <div class="pb soft"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-meta-top">
+                <span class="proj-badge">Web</span>
+                <span class="proj-date">📅 2026</span>
+              </div>
+              <h3>Travel Guide</h3>
+              <p>A role-based travel information platform built end-to-end with Laravel, including database design,
+                backend logic, and RBAC for Admin, Scout, and User roles.</p>
+              <div class="project-tags">
+                <span>Laravel</span><span>PHP</span><span>MySQL</span><span>RBAC</span>
+              </div>
+              <div class="project-footer">
+                <span class="status-dot"><span class="green-dot"></span> Academic Project</span>
+                <a class="btn btn-sm-teal" href="https://github.com/MahinAhmadEmon" target="_blank" rel="noopener">View
+                  GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card-h reveal">
+            <div class="project-preview">
+              <div class="project-preview-inner">
+                <div class="preview-bar"><span></span><span></span><span></span><em>SmartKroy.cs</em></div>
+                <div class="preview-content">
+                  <div class="preview-header">SmartKroy E-Commerce</div>
+                  <div class="preview-row">
+                    <div class="pb accent"></div>
+                    <div class="pb"></div>
+                    <div class="pb"></div>
+                  </div>
+                  <div class="preview-row">
+                    <div class="pb"></div>
+                    <div class="pb soft"></div>
+                  </div>
+                  <div class="preview-row">
+                    <div class="pb soft"></div>
+                    <div class="pb accent"></div>
+                  </div>
+                  <div class="preview-row">
+                    <div class="pb"></div>
+                    <div class="pb"></div>
+                    <div class="pb soft"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-meta-top">
+                <span class="proj-badge">Desktop</span>
+                <span class="proj-date">📅 2024</span>
+              </div>
+              <h3>SmartKroy</h3>
+              <p>A multi-vendor e-commerce management system with customer, admin, and supplier workflows, product and
+                inventory management, billing, and centralized platform control.</p>
+              <div class="project-tags">
+                <span>C#</span><span>.NET Framework</span><span>Windows Forms</span><span>MySQL</span>
+              </div>
+              <div class="project-footer">
+                <span class="status-dot"><span class="green-dot"></span> Academic Project</span>
+                <a class="btn btn-sm-teal" href="#contact">Ask for details →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card-h reveal">
+            <div class="project-preview">
+              <div class="project-preview-inner">
+                <div class="preview-bar"><span></span><span></span><span></span><em>ShopManager.java</em></div>
+                <div class="preview-content">
+                  <div class="preview-header">Shop Management</div>
+                  <div class="preview-row">
+                    <div class="pb"></div>
+                    <div class="pb accent"></div>
+                  </div>
+                  <div class="preview-row">
+                    <div class="pb soft"></div>
+                    <div class="pb"></div>
+                    <div class="pb"></div>
+                  </div>
+                  <div class="preview-row">
+                    <div class="pb accent"></div>
+                    <div class="pb soft"></div>
+                  </div>
+                  <div class="preview-row">
+                    <div class="pb"></div>
+                    <div class="pb soft"></div>
+                    <div class="pb"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-meta-top">
+                <span class="proj-badge">Desktop</span>
+                <span class="proj-date">📅 2023</span>
+              </div>
+              <h3>Shop Management System</h3>
+              <p>A Java application for managing games and computer products, pricing, and stock status with login and
+                full add, delete, edit, and update operations.</p>
+              <div class="project-tags">
+                <span>Java</span><span>CRUD</span><span>VS Code</span>
+              </div>
+              <div class="project-footer">
+                <span class="status-dot"><span class="green-dot"></span> Academic Project</span>
+                <a class="btn btn-sm-teal" href="#contact">Ask for details →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SKILLS ═══ -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-label reveal"><span>🛠️ Technical Skills</span></div>
+        <div class="section-heading center-heading reveal">
+          <h2>Technologies I <span class="gradient-text">Work With</span></h2>
+          <p>No fake percentage bars — grouped by areas I've actually used in study and real projects.</p>
+        </div>
+        <div class="skills-categories reveal">
+          <div class="skill-cat">
+            <h4>Frontend</h4>
+            <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span
+                class="chip">JavaScript</span></div>
+          </div>
+          <div class="skill-cat">
+            <h4>Backend &amp; Languages</h4>
+            <div class="chips"><span class="chip">PHP</span><span class="chip">Laravel</span><span
+                class="chip">C++</span><span class="chip">Java</span><span class="chip">C#</span><span
+                class="chip">OOP</span></div>
+          </div>
+          <div class="skill-cat">
+            <h4>Database</h4>
+            <div class="chips"><span class="chip">MySQL</span><span class="chip">Oracle</span></div>
+          </div>
+          <div class="skill-cat">
+            <h4>Tools &amp; Creative</h4>
+            <div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">VS
+                Code</span><span class="chip">Visual Studio</span><span class="chip">Canva</span><span class="chip">MS
+                Office</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-label reveal"><span>👤 About Me</span></div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <h2>Building practical software<br>with a <span class="gradient-text">strong UI focus</span></h2>
+            <p>I'm a self-motivated CSE student at AIUB, majoring in Software Engineering. I enjoy turning requirements
+              into organized, user-friendly interfaces and learning how the full application fits together — from front
+              end to backend logic and databases.</p>
+            <div class="profile-info">
+              <div><span>Name</span><strong>Mahin Ahmad Emon</strong></div>
+              <div><span>Role</span><strong>Full-Stack Developer</strong></div>
+              <div><span>University</span><strong>AIUB</strong></div>
+              <div><span>Major</span><strong>Software Engineering</strong></div>
+              <div><span>Location</span><strong>Dhaka, Bangladesh</strong></div>
+              <div><span>Email</span><a href="mailto:mahinahmad911@gmail.com">mahinahmad911@gmail.com</a></div>
+              <div><span>GitHub</span><a href="https://github.com/MahinAhmadEmon" target="_blank"
+                  rel="noopener">MahinAhmadEmon</a></div>
+            </div>
+          </div>
+          <div class="about-cards reveal">
+            <div class="about-mini-card">
+              <span class="mini-num teal-text">01</span>
+              <h4>Full-Stack Development</h4>
+              <p>Responsive layouts and interactive interfaces using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="about-mini-card">
+              <span class="mini-num teal-text">02</span>
+              <h4>Application Development</h4>
+              <p>Academic projects using Laravel/PHP, C#/.NET, Java, and role-based application logic.</p>
+            </div>
+            <div class="about-mini-card">
+              <span class="mini-num teal-text">03</span>
+              <h4>Database Work</h4>
+              <p>Connecting app features to MySQL and working with Oracle in coursework.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ JOURNEY ═══ -->
+    <section id="journey" class="section section-alt">
+      <div class="container">
+        <div class="section-label reveal"><span>📅 My Journey</span></div>
+        <div class="section-heading center-heading reveal">
+          <h2>Education &amp; <span class="gradient-text">Experience</span></h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="tl-marker">2023<br>2027</div>
+            <div class="tl-content glass-card">
+              <p class="tl-label">Education</p>
+              <h3>BSc in Computer Science &amp; Engineering</h3>
+              <p><strong>American International University-Bangladesh (AIUB)</strong></p>
+              <p>Major in Software Engineering.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="tl-marker">2024<br>2025</div>
+            <div class="tl-content glass-card">
+              <p class="tl-label">Leadership &amp; Customer Relations</p>
+              <h3>Moderator — Odyssey Square</h3>
+              <p>Managed customers, supported order coordination, and helped handle product delivery for an e-commerce
+                page.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="tl-marker">2022</div>
+            <div class="tl-content glass-card">
+              <p class="tl-label">Education</p>
+              <h3>Higher Secondary Certificate</h3>
+              <p><strong>Dhaka Commerce College</strong> — Science background.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="tl-marker">2021</div>
+            <div class="tl-content glass-card">
+              <p class="tl-label">Volunteer Leadership</p>
+              <h3>Team Leader — The Biggest Astronomy Carnival</h3>
+              <p>Supported visitors and performed team leadership responsibilities during the event.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="tl-marker">2020</div>
+            <div class="tl-content glass-card">
+              <p class="tl-label">Education</p>
+              <h3>Secondary School Certificate</h3>
+              <p><strong>Monipur Uchcha Vidyalaya and College</strong> — Science background.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-cta-card reveal">
+          <div class="section-label"><span>📬 Contact</span></div>
+          <h2>Have a project in mind?</h2>
+          <p>If you have an internship opportunity, junior developer role, collaboration, or a project to discuss, I'd
+            love to hear from you.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="mailto:mahinahmad911@gmail.com">✉ Get In Touch</a>
+            <a class="btn btn-outline" href="https://github.com/MahinAhmadEmon" target="_blank" rel="noopener">GitHub
+              Profile</a>
+          </div>
+          <div class="cta-details">
+            <a href="mailto:mahinahmad911@gmail.com"><span>Email</span> mahinahmad911@gmail.com</a>
+            <a href="tel:+8801625335297"><span>Phone</span> +88 01625335297</a>
+            <div><span>Location</span> Dhaka, Bangladesh</div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <h3>Send a Message</h3>
+          <form class="contact-form" name="portfolio-contact" method="POST" data-netlify="true"
+            netlify-honeypot="bot-field" action="/thanks.html">
+            <input type="hidden" name="form-name" value="portfolio-contact">
+            <p class="hidden-field"><label>Don't fill this out: <input name="bot-field"></label></p>
+            <div class="field-row">
+              <label>Name<input type="text" name="name" autocomplete="name" required></label>
+              <label>Email<input type="email" name="email" autocomplete="email" required></label>
+            </div>
+            <label>Subject<input type="text" name="subject" required></label>
+            <label>Message<textarea name="message" rows="5" required></textarea></label>
+            <button class="btn btn-primary" type="submit">Send Message →</button>
+            <p class="form-note">This form uses Netlify Forms for submissions on production.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="footer-logo" href="#home">MA<span>.</span></a>
+        <p>Full-Stack Developer based in Dhaka, Bangladesh.<br>Building clean, practical web experiences.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/MahinAhmadEmon" target="_blank" rel="noopener">GitHub</a>
+        <a href="assets/cv/Mahin_Ahmad_Emon_CV_OnePage.pdf" download>Download CV</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="year"></span> Mahin Ahmad Emon. Built with HTML, CSS &amp; JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="back-to-top" id="back-to-top" href="#" aria-label="Back to top">↑</a>
+</body>
+
+</html>
