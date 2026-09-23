@@ -122,7 +122,11 @@
     window.location.hostname === '127.0.0.1' ||
     window.location.hostname.endsWith('.test') ||
     window.location.hostname.endsWith('.local');
-  if (!isLocal) return;
+  if (!isLocal) {
+    if (note) note.textContent = 'Your message will be submitted securely.';
+    return;
+  }
+  if (note) note.textContent = 'On this local preview, submission opens your email app.';
 
   form.addEventListener('submit', function (event) {
     event.preventDefault();
