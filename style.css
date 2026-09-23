@@ -517,6 +517,38 @@ img { max-width: 100%; }
 .form-note  { color: var(--muted); font-size: 0.76rem; margin-top: -4px; }
 .hidden-field { position: absolute !important; width: 1px !important; height: 1px !important; overflow: hidden !important; clip: rect(1px,1px,1px,1px); }
 
+/* ── Form success page ── */
+.form-success {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: var(--bg2);
+}
+.form-success-card {
+  width: min(100%, 560px);
+  padding: 56px 42px;
+  text-align: center;
+  background: var(--card);
+  border: 1px solid var(--card-b);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.form-success-icon {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  background: var(--teal);
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.form-success-card h1 { margin-bottom: 12px; font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.1; }
+.form-success-card > p:not(.section-label) { color: var(--muted); margin-bottom: 28px; }
+
 /* ============================================================
    FOOTER
    ============================================================ */
