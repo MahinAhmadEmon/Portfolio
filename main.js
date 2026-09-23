@@ -89,6 +89,57 @@
   draw();
 })();
 
+/* ── Theme Toggle ── */
+(function () {
+  var button = document.querySelector('.theme-toggle');
+  if (!button) return;
+  var root = document.documentElement;
+  var savedTheme = localStorage.getItem('portfolio-theme');
+
+  function update(theme) {
+    var dark = theme === 'dark';
+    root.dataset.theme = dark ? 'dark' : 'light';
+    button.setAttribute('aria-pressed', String(dark));
+    button.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    button.querySelector('.theme-label').textContent = dark ? 'Light mode' : 'Dark mode';
+  }
+
+  update(savedTheme === 'dark' ? 'dark' : 'light');
+  button.addEventListener('click', function () {
+    var nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('portfolio-theme', nextTheme);
+    update(nextTheme);
+  });
+})();
+
+/* ── Contact Form Local Fallback ── */
+(function () {
+  var form = document.querySelector('.contact-form');
+  if (!form) return;
+  var note = form.querySelector('.form-note');
+  var isLocal = window.location.protocol === 'file:' ||
+    window.location.hostname === 'localhost' ||
+    window.location.hostname === '127.0.0.1' ||
+    window.location.hostname.endsWith('.test') ||
+    window.location.hostname.endsWith('.local');
+  if (!isLocal) return;
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    var data = new FormData(form);
+    var subject = data.get('subject') || 'Portfolio contact';
+    var body = [
+      'Name: ' + (data.get('name') || ''),
+      'Email: ' + (data.get('email') || ''),
+      '',
+      data.get('message') || ''
+    ].join('\n');
+    window.location.href = 'mailto:mahinahmad911@gmail.com?subject=' +
+      encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    if (note) note.textContent = 'Your email app should open with this message ready to send.';
+  });
+})();
+
 /* ── Scroll Reveal ── */
 (function () {
   var els = document.querySelectorAll('.reveal');

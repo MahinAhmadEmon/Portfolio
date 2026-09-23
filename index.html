@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
     content="Portfolio of Mahin Ahmad Emon — Full-Stack Developer and Software Engineering student building responsive web interfaces and database-driven applications.">
-  <meta name="theme-color" content="#0B1120">
+  <meta name="theme-color" content="#ffffff">
   <title>Mahin Ahmad Emon | Full-Stack Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,6 +42,10 @@
         <a href="#journey">Journey</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+        <span class="theme-label">Dark mode</span>
+      </button>
       <a class="btn btn-small btn-primary nav-cta" href="assets/cv/Mahin_Ahmad_Emon_CV.pdf" download>Download
         CV</a>
     </div>
@@ -474,7 +478,7 @@
             <label>Subject<input type="text" name="subject" required></label>
             <label>Message<textarea name="message" rows="5" required></textarea></label>
             <button class="btn btn-primary" type="submit">Send Message →</button>
-            <p class="form-note">This form uses Netlify Forms for submissions on production.</p>
+            <p class="form-note" aria-live="polite">On this local preview, submission opens your email app.</p>
           </form>
         </div>
       </div>
